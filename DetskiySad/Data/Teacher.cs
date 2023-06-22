@@ -21,9 +21,12 @@ namespace DetskiySad.Data
         }
     
         public int Id { get; set; }
-        public int Name { get; set; }
+        public string Name { get; set; }
         public int FullYears { get; set; }
-        public decimal Expereince { get; set; }
+        public int Expereince { get; set; }
+        public string Adress { get; set; }
+        public string LastWorkPlace { get; set; }
+        public string Post { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Group> Groups { get; set; }

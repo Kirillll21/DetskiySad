@@ -9,6 +9,89 @@
       Title="PageAddTeacher">
 
     <Grid>
-        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Right" >
+                <Button Content="Назад"
+                    Name="BackBtn"
+                    Click="BackBtn_Click"
+                    Height="46"
+                    Width="131"
+                    />
+            </StackPanel>
+
+            <StackPanel Grid.Row="1"
+                    VerticalAlignment="Top"
+                    Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Введите ФИО:"
+                       Height="27" Width="122"/>
+                    <TextBox Width="225"
+                         Name="TxbName"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Введите стаж:"/>
+                    <TextBox Width="65"
+                             Name="TxbExp"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2"
+                    VerticalAlignment="Top"
+                    Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Введите возраст:"
+                       Height="27" Width="122"/>
+                    <TextBox Width="75"
+                         Name="TxbAge"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Место прошлой работы"/>
+                    <TextBox Width="350"
+                             Name="TxbLastWork"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3">
+                <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center">
+                    <TextBlock Text="Введите адрес:"/>
+                    <TextBox Width="500"
+                         Name="TxbAdress"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Grid.Row="4">
+                <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center">
+                    <TextBlock Text="Введите название должности:"/>
+                    <TextBox Width="200"
+                         Name="TxbPostName"/>
+                    <StackPanel Orientation="Horizontal"                            
+                            HorizontalAlignment="Right">
+                        <Button Margin="100,0,0,0"
+                            Width="160"
+                            Height="40"
+                            Name="AddToTeacher"
+                            Click="AddToTeacher_Click"
+                            >
+                            <TextBlock Text="Добавить"
+                                   TextAlignment="Center"
+                                   FontSize="20"/>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>

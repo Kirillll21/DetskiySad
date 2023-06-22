@@ -16,7 +16,7 @@ namespace DetskiySad.UserPages
             InitializeComponent();
 
 
-            DbConnect.entObj = new DetskiySadEntities();
+            DbConnect.entObj = new DetskiySadEntities1();
         }
 
         private void BtnLogin_Click(object sender, RoutedEventArgs e)

@@ -30,14 +30,18 @@
         <StackPanel Grid.Column="0"
                     Grid.Row="1"
                     Orientation="Vertical">
-            <Button Style="{StaticResource MenuButton}"
+            <Button Style = "{StaticResource MenuButton}"
                     Margin="150,50,10,10"
                     Content="Список воспитанников"
                     Name="ListKids"
-                    Click="ListKids_Click"/>
-            
-                       
-        
+                    Click="ListKids_Click"/>            
+
+            <Button Style="{StaticResource MenuButton}"
+                    Margin="150,10,10,10"
+                    Content="Добавить воспитаника"
+                    Name="AddKid" Click="AddKid_Click"/>      
+
+
         </StackPanel>
 
         <StackPanel Grid.Column="1"
@@ -50,9 +54,12 @@
                     Name="ListTeachers"
                     Click="ListTeachers_Click"
                     />
-            
-
-            
+            <Button Style="{StaticResource MenuButton}"
+                    Margin="-100,20,10,0"
+                    Content="Добавить воспитателя"
+                    Name="AddTeacher"
+                    Click="AddTeacher_Click"/>      
+                        
 
         </StackPanel>
 

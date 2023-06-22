@@ -20,7 +20,7 @@ namespace DetskiySad.Data
         public int IdKids { get; set; }
         public int IdTeacher { get; set; }
     
-        public virtual Teacher Teacher { get; set; }
         public virtual Kid Kid { get; set; }
+        public virtual Teacher Teacher { get; set; }
     }
 }

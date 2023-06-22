@@ -2,6 +2,6 @@
 {
     public class DbConnect
     {
-        public static DetskiySadEntities entObj;
+        public static DetskiySadEntities1 entObj;
     }
 }

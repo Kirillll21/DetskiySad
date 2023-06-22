@@ -66,36 +66,36 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Data\DbConnect.cs" />
+    <Compile Include="Data\DetskiySad.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetskiySad.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DetskiySad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetskiySad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DetskiySad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetskiySad.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Data\FrameApp.cs" />
     <Compile Include="Data\Group.cs">
-      <DependentUpon>SadDb.tt</DependentUpon>
+      <DependentUpon>DetskiySad.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Kid.cs">
-      <DependentUpon>SadDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\SadDb.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SadDb.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\SadDb.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SadDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\SadDb.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SadDb.edmx</DependentUpon>
+      <DependentUpon>DetskiySad.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\sysdiagram.cs">
-      <DependentUpon>SadDb.tt</DependentUpon>
+      <DependentUpon>DetskiySad.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Teacher.cs">
-      <DependentUpon>SadDb.tt</DependentUpon>
+      <DependentUpon>DetskiySad.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\User.cs">
-      <DependentUpon>SadDb.tt</DependentUpon>
+      <DependentUpon>DetskiySad.tt</DependentUpon>
     </Compile>
     <Compile Include="UserPages\ListKidsPage.xaml.cs">
       <DependentUpon>ListKidsPage.xaml</DependentUpon>
@@ -170,12 +170,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Data\SadDb.edmx">
+    <EntityDeploy Include="Data\DetskiySad.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SadDb.Designer.cs</LastGenOutput>
+      <LastGenOutput>DetskiySad.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Data\SadDb.edmx.diagram">
-      <DependentUpon>SadDb.edmx</DependentUpon>
+    <None Include="Data\DetskiySad.edmx.diagram">
+      <DependentUpon>DetskiySad.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -190,19 +190,19 @@
     <Folder Include="Source\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\SadDb.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>SadDb.Context.cs</LastGenOutput>
-      <DependentUpon>SadDb.edmx</DependentUpon>
-    </Content>
-    <Content Include="Data\SadDb.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SadDb.edmx</DependentUpon>
-      <LastGenOutput>SadDb.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="Data\DetskiySad.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DetskiySad.edmx</DependentUpon>
+      <LastGenOutput>DetskiySad.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Data\DetskiySad.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DetskiySad.edmx</DependentUpon>
+      <LastGenOutput>DetskiySad.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

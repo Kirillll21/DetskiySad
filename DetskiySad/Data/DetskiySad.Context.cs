@@ -13,10 +13,10 @@ namespace DetskiySad.Data
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DetskiySadEntities : DbContext
+    public partial class DetskiySadEntities1 : DbContext
     {
-        public DetskiySadEntities()
-            : base("name=DetskiySadEntities")
+        public DetskiySadEntities1()
+            : base("name=DetskiySadEntities1")
         {
         }
     
@@ -25,10 +25,10 @@ namespace DetskiySad.Data
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Group> Groups { get; set; }
+        public virtual DbSet<Kid> Kids { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<Group> Groups { get; set; }
         public virtual DbSet<Teacher> Teachers { get; set; }
-        public virtual DbSet<Kid> Kids { get; set; }
     }
 }

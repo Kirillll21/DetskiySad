@@ -23,5 +23,15 @@ namespace DetskiySad.UserPages
         {
             FrameApp.frmObj.Navigate(new ListKidsPage());
         }
+
+        private void AddKid_Click(object sender, RoutedEventArgs e)
+        {
+            FrameApp.frmObj.Navigate(new PageAddKid());
+        }
+
+        private void AddTeacher_Click(object sender, RoutedEventArgs e)
+        {
+            FrameApp.frmObj.Navigate(new PageAddTeacher());
+        }
     }
 }
