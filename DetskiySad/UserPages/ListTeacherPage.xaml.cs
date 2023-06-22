@@ -55,7 +55,7 @@ namespace DetskiySad.UserPages
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.GoBack();
         }
 
         private void Page_IsEnabledChanged(object sender, DependencyPropertyChangedEventArgs e)

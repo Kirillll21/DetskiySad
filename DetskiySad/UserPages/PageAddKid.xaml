@@ -18,7 +18,11 @@
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal"
-                    HorizontalAlignment="Right" >
+                    HorizontalAlignment="Right">
+            <TextBlock Text="Форма добавления воспитанника"
+                           Margin="0,0,30,0"
+                           FontSize="30"
+                           FontFamily="Times New Roman"/>
             <Button Content="Назад"
                     Name="BackBtn"
                     Click="BackBtn_Click"
