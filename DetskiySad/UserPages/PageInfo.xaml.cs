@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DetskiySad.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,7 @@ namespace DetskiySad.UserPages
 
         private void BackBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.GoBack();
         }
     }
 }

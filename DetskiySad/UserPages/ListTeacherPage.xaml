@@ -53,12 +53,12 @@
             <Button Content="Добавить" 
                     FontFamily="Times New Roman"
                     Name="BtnAdd"
-                    Click="BtnAdd_Click"/>
+                    Click="BtnAdd_Click" Width="119"/>
 
             <Button Content="Удалить"
                     FontFamily="Times New Roman"
                     Name="BtnDelete"
-                    Click="BtnDelete_Click"/>
+                    Click="BtnDelete_Click" Width="119"/>
 
         </StackPanel>
     </Grid>
