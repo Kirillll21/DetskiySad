@@ -25,6 +25,7 @@ namespace DetskiySad.Data
         public int GroupNumber { get; set; }
         public string Adress { get; set; }
         public int FullYears { get; set; }
+        public Nullable<System.DateTime> DateBirth { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Group> Groups { get; set; }

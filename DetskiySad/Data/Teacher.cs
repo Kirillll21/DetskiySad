@@ -27,6 +27,7 @@ namespace DetskiySad.Data
         public string Adress { get; set; }
         public string LastWorkPlace { get; set; }
         public string Post { get; set; }
+        public Nullable<System.DateTime> DateBirth { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Group> Groups { get; set; }
