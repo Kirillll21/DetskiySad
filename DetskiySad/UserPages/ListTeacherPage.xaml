@@ -18,7 +18,7 @@
 
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Right">
-            <TextBlock Text="Список сотрудников"
+            <TextBlock Text="Список воспитателей"
                            Margin="0,0,95,0"
                            FontSize="30"
                            FontFamily="Times New Roman"/>

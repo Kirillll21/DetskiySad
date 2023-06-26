@@ -33,5 +33,10 @@ namespace DetskiySad.UserPages
         {
             FrameApp.frmObj.Navigate(new PageAddTeacher());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            FrameApp.frmObj.Navigate(new PageInfo());
+        }
     }
 }

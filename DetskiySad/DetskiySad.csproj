@@ -115,6 +115,9 @@
     <Compile Include="UserPages\PageAddTeacher.xaml.cs">
       <DependentUpon>PageAddTeacher.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserPages\PageInfo.xaml.cs">
+      <DependentUpon>PageInfo.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -148,6 +151,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserPages\PageAddTeacher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserPages\PageInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -186,9 +193,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Source\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
@@ -203,6 +208,7 @@
       <DependentUpon>DetskiySad.edmx</DependentUpon>
       <LastGenOutput>DetskiySad.cs</LastGenOutput>
     </Content>
+    <Resource Include="Source\qrcod.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,7 +16,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="70"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         
@@ -26,6 +26,16 @@
                VerticalAlignment="Top"               
                HorizontalAlignment="Center"
                Height="40" Width="61"/>
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+            <Button Style="{StaticResource ButtonInfo}" Height="59" Width="178" Click="Button_Click">
+                <Button.Content>
+                    <TextBlock Text="Информация о организации"
+                                   FontSize="18" Height="65"
+                                   />
+                </Button.Content>
+            </Button>
+        </StackPanel>
 
         <StackPanel Grid.Column="0"
                     Grid.Row="1"

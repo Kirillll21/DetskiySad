@@ -24,7 +24,10 @@
           <Property Name="GroupNumber" Type="int" Nullable="false" />
           <Property Name="Adress" Type="nvarchar" MaxLength="250" Nullable="false" />
           <Property Name="FullYears" Type="int" Nullable="false" />
+          <Property Name="DateBirth" Type="datetime" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DetskiySad.dbo.Parents' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -46,6 +49,7 @@
           <Property Name="Adress" Type="nvarchar(max)" Nullable="false" />
           <Property Name="LastWorkPlace" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Post" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DateBirth" Type="datetime" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -120,6 +124,7 @@
           <Property Name="Adress" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="FullYears" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Groups" Relationship="Self.FK_Group_Kids" FromRole="Kids" ToRole="Group" />
+          <Property Name="DateBirth" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="sysdiagram">
           <Key>
@@ -178,6 +183,7 @@
           <Property Name="LastWorkPlace" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Post" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Groups" Relationship="DetskiySadModel.FK_Group_Teachers" FromRole="Teacher" ToRole="Group" />
+          <Property Name="DateBirth" Type="DateTime" Precision="3" />
         </EntityType>
         <Association Name="FK_Group_Teachers">
           <End Type="DetskiySadModel.Teacher" Role="Teacher" Multiplicity="1" />
@@ -211,6 +217,7 @@
           <EntitySetMapping Name="Kids">
             <EntityTypeMapping TypeName="DetskiySadModel.Kid">
               <MappingFragment StoreEntitySet="Kids">
+                <ScalarProperty Name="DateBirth" ColumnName="DateBirth" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="GroupNumber" ColumnName="GroupNumber" />
@@ -242,6 +249,7 @@
           <EntitySetMapping Name="Teachers">
             <EntityTypeMapping TypeName="DetskiySadModel.Teacher">
               <MappingFragment StoreEntitySet="Teachers">
+                <ScalarProperty Name="DateBirth" ColumnName="DateBirth" />
                 <ScalarProperty Name="Post" ColumnName="Post" />
                 <ScalarProperty Name="LastWorkPlace" ColumnName="LastWorkPlace" />
                 <ScalarProperty Name="Adress" ColumnName="Adress" />

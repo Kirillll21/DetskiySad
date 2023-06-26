@@ -39,7 +39,7 @@ namespace DetskiySad.UserPages
         {
             if (DbConnect.entObj.Teachers.Count(x => x.Name == TxbName.Text) > 0)
             {
-                System.Windows.MessageBox.Show("Такой работник уже есть уже есть!",
+                System.Windows.MessageBox.Show("Такой воспитатель уже есть!",
                     "Уведомление",
                     MessageBoxButton.OK,
                     MessageBoxImage.Information);
