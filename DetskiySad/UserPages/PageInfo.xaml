@@ -15,8 +15,9 @@
                 <RowDefinition Height="50*"/>
                 
             </Grid.RowDefinitions>
-            
-        <StackPanel Orientation="Horizontal"
+
+        <StackPanel Grid.RowSpan="2" Background="AliceBlue">
+            <StackPanel Orientation="Horizontal"
                     Grid.Row="0"
                     HorizontalAlignment="Right">
             <TextBlock Text="Информация об организации"
@@ -55,6 +56,7 @@
                 <Image Source="/Source/qrcod.png" 
                    Width="150"/>
             </StackPanel>
+        </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

@@ -56,7 +56,8 @@
 
         <StackPanel Grid.Column="1"
                     Grid.Row="1"
-                    Orientation="Vertical">
+                    Orientation="Vertical"
+                    >
             
             <Button Margin="-100,50,10,0"
                     Style="{StaticResource MenuButton}"

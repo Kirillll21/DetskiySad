@@ -16,7 +16,7 @@
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal"
+        <StackPanel Orientation="Horizontal"                   
                     HorizontalAlignment="Right">
             <TextBlock Text="Список воспитателей"
                            Margin="0,0,95,0"
