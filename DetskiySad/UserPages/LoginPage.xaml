@@ -9,28 +9,38 @@
       Title="LoginPage">
 
     <Grid>
+        <StackPanel Background="#FF57A277">
+            <TextBlock Text="Авторизация"
+                       FontSize="36" FontFamily="Global Serif"
+                       />
+        </StackPanel>
 
 
         <StackPanel HorizontalAlignment="Left"
                     VerticalAlignment="Top"
-                    Margin="96,99,0,0" Height="341" Width="358">
+                    
+                    Margin="96,99,0,0" Height="185" Width="380" Background="#FF57A277">
 
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <TextBlock Text="Введите логин:"
-                           Width="150" />
-                <TextBox Name="TxbLogin"/>
+                           Width="150"
+                           FontSize="19"/>
+                <TextBox Name="TxbLogin"
+                         FontSize="19" Width="210"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <TextBlock Text="Введите пароль:"
-                           Width="150" />
-                <PasswordBox Name="PsbPassword"/>
+                           Width="150"
+                           FontSize="19"/>
+                <PasswordBox Name="PsbPassword"
+                             FontSize="19" Width="210"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">
                 <Button Name="BtnLogin"
-                        Click="BtnLogin_Click" Height="33">
+                        Click="BtnLogin_Click" Height="33" Width="143">
                     <TextBlock Text="Войти"/>
                 </Button>
 
